@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.photo_gallery"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.photo_gallery"
@@ -50,6 +50,8 @@ android {
 }
 
 dependencies {
+    val nav_version = "2.7.4"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
